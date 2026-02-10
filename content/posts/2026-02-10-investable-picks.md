@@ -17,4 +17,4 @@ Today's scan found investable turnaround opportunities. Click above to view full
 
 ---
 
-**[📰 Read Full Newsletter ›](/newsletters/2026-02-10-newsletter.html)**
+**[📰 Read Full Newsletter ›](/tech-turnaround-daily/newsletters/2026-02-10-newsletter.html)**
