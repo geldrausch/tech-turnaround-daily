@@ -1,47 +1,24 @@
 baseURL = 'https://geldrausch.github.io/tech-turnaround-daily/'
 languageCode = 'en-us'
 title = 'Tech Turnaround Daily'
-theme = 'PaperMod'
+theme = 'terminal'
 
 [params]
-  description = 'Daily systematic analysis of mid-cap tech turnarounds ($300M-$50B)'
-  author = 'Tech Turnaround Daily'
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  
-  [params.homeInfoParams]
-    Title = "📊 Tech Turnaround Daily"
-    Content = """
-Systematic analysis of Russell 2000 tech stocks.
+  contentTypeName = 'posts'
+  themeColor = 'blue'
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
 
-- **Daily scans** of 550+ mid-cap tech stocks
-- **Data-driven picks** with 3:1 risk/reward minimum  
-- **AI-powered research** combining fundamentals, technicals, and alternative data
-- **Market cap focus:** $300M - $50B (true turnaround sweet spot)
-"""
-
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
+[[params.social]]
+  name = "rss"
+  url = "/index.xml"
 
 [menu]
   [[menu.main]]
+    identifier = "posts"
     name = "Archive"
-    url = "/archives/"
-    weight = 1
-  
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
+    url = "/posts"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  home = ["HTML", "RSS"]
