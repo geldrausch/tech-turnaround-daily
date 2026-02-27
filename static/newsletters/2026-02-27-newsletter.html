@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Turnaround Daily - Issue #13</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1e40af;
+            margin: 0 0 10px 0;
+        }
+        .issue-info {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .picks-banner {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .picks-banner h2 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .picks-count {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .pick-card {
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            background: #f0fdf4;
+        }
+        .pick-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #10b981;
+        }
+        .ticker {
+            font-size: 32px;
+            font-weight: bold;
+            color: #065f46;
+        }
+        .company-name {
+            color: #6b7280;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .conviction {
+            background: #065f46;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .thesis {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #10b981;
+        }
+        .thesis h3 {
+            color: #065f46;
+            margin-top: 0;
+        }
+        .trade-setup {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        .trade-metric {
+            text-align: center;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f9fafb;
+        }
+        .trade-label {
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .trade-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #065f46;
+            margin-top: 5px;
+        }
+        .catalysts {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        .catalyst-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+        }
+        .catalyst-type {
+            font-weight: bold;
+            color: #d97706;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+        .technicals {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .technical-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .tech-label {
+            color: #6b7280;
+            font-size: 13px;
+        }
+        .tech-value {
+            font-weight: bold;
+            color: #1f2937;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .disclaimer {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Tech Turnaround Daily</h1>
+            <div class="issue-info">
+                Issue #13 • February 27, 2026 • Russell 2000 Tech Focus
+            </div>
+        </div>
+
+        <div class="picks-banner">
+            <h2>🎯 Investable Turnaround Picks</h2>
+            <div class="picks-count">7</div>
+            <p style="margin: 0; opacity: 0.9;">Stocks passed our strict investability filters today</p>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">1. PEGA</div>
+                    <div class="company-name">Pegasystems Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>PEGA suggests a potential turnaround candidate due to recent management changes [2] and growing earnings [4], which may help the company improve its competitive standing. Data shows a significant insider buying activity, with 20 transactions and a Buy/Sell ratio of 99.0x [5]. This indicates a potential shift in the company's trajectory, but conviction is limited due to insufficient facts on the company's overall strategy.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$45.31</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$77.03</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$38.51</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🔴 Ma Activity</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🔴 Management Change</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Restructuring</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+45.4%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">21.2723</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">97.0%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">31.618538953873315%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">2/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>❌ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>✅ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">2. ITRI</div>
+                    <div class="company-name">Itron, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>ITRI suggests a potential turnaround candidate due to its recent debt conversion agreement, which reduced accounts payable [1], and outperforming the XLK by 4.0% [4], indicating a positive trend. The significant insider buying activity, with a Buy/Sell ratio of 99.0x [3], further supports this thesis. Data shows declining earnings, but the recent business deal and insider activity may be a catalyst for improvement.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$96.08</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$163.34</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$84.89</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-12%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">6.0:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Business Deal</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+7.5%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">14.781539</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">74.9%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">43.86158409658617%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">7/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>❌ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">3. BZ</div>
+                    <div class="company-name">Kanzhun Limited</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>BZ suggests a potential turnaround candidate due to its growing earnings, with a quarterly average increase of +5.9% [4], despite currently underperforming vs XLC by 21.8% [5], and with elevated short interest [6], indicating a possible reversal. Data shows [4] a positive earnings trend, which could drive a turnaround. However, the conviction level is moderate due to insufficient facts on the company's specific plans and industry position.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$16.32</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$27.74</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$13.87</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Business Deal</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+20.7%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">20.658226</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">72.2%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">63.43851715686273%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">3/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>❌ Volume Confirmation</li>
+<li>✅ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">4. CRSR</div>
+                    <div class="company-name">Corsair Gaming, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>Corsair (CRSR) suggests a potential turnaround candidate due to its strong revenue and profit growth for 4Q25 and FY25, as reported in its earnings report [1], despite underperforming vs XLK by 1.9% [3]. The company's insider transactions show a Buy/Sell ratio of 99.0x [4], which may indicate confidence in the company's future. However, the declining earnings growth rate (+nan% QoQ avg) [2] is a concern.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$5.77</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$9.81</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$4.90</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+26.0%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">7.6195755</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">1028.2%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">38.648180242634325%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">5/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (4/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>✅ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">5. NICE</div>
+                    <div class="company-name">NICE Ltd.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>NICE suggests a potential turnaround candidate due to its growing earnings, with a quarterly average growth of +0.5% [3], and outperforming the XLK by 5.8% in YTD returns [4]. The elevated short interest of 0.1% of float [5] may indicate a potential short squeeze. Data shows a relatively stable financial performance, but conviction is moderate due to limited information.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$115.90</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$197.03</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$98.52</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Business Deal</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Business Deal</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+21.6%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">13.170454</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">51.300000000000004%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">35.00144089732527%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">7/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (4/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>✅ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">6. ZM</div>
+                    <div class="company-name">Zoom Communications, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>ZM suggests a potential turnaround candidate due to its growing earnings, with a quarterly average growth of +1.3% [3], and significant insider activity with a Buy/Sell ratio of 99.0x [4], despite currently underperforming vs XLK by 7.1% [5]. The recent earnings report trend in the market, as seen with Domino's and Nvidia [1], [2], may also impact ZM's performance. Data shows a need for a crucial update to drive growth.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$75.54</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$128.42</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$64.21</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+13.3%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">14.696499</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">83.2%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">29.53647074397669%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">5/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (4/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>✅ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">7. ALRM</div>
+                    <div class="company-name">Alarm.com Holdings, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>ALRM suggests a potential turnaround candidate as its earnings are growing at a 2.0% QoQ average [2], and despite underperforming vs XLK by 2.7% [4], the recent price target reduction by Barclays [1] may indicate a buying opportunity. The insider transactions, with a Buy/Sell ratio of 99.0x [3], also indicate a positive sentiment. Data shows elevated short interest at 0.1% of float [5], which could lead to a short squeeze.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$48.69</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$82.77</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$42.03</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-14%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">5.1:1</div>
+                </div>
+            </div>
+
+            <div class="catalysts">
+                <h3 style="color: #d97706; margin-top: 0;">🔥 WHY NOW - Timing Catalysts</h3>
+
+                <div class="catalyst-item">
+                    <div class="catalyst-type">🟡 Earnings Report</div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+10.1%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">20.631357</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">14.499999999999998%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">19.12096939823373%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">7/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>❌ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <h3 style="color: #d97706; margin-top: 0;">⚠️ Important Disclaimer</h3>
+            <p><strong>This is not investment advice.</strong> These are turnaround opportunities with significant risk. Always:</p>
+            <ul>
+                <li>Do your own research and due diligence</li>
+                <li>Use proper position sizing (2-5% of portfolio)</li>
+                <li>Set stop losses and stick to them</li>
+                <li>Consult with a financial advisor</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <h3>📊 Today's Scan</h3>
+            <ul>
+                <li><strong>Stocks Screened:</strong> 537</li>
+                <li><strong>Discovery Candidates:</strong> 19</li>
+                <li><strong>Deep Analysis:</strong> 18</li>
+                <li><strong>Investable Today:</strong> 7 (1.30%)</li>
+            </ul>
+            <p style="margin-top: 20px; color: #9ca3af; text-align: center;">
+                Generated 2026-02-27 11:50 UTC<br>
+                Issue #13 • Tech Turnaround Daily
+            </p>
+        </div>
+    </div>
+</body>
+</html>
