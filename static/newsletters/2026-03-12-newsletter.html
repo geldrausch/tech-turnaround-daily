@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Turnaround Daily - Issue #22</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1e40af;
+            margin: 0 0 10px 0;
+        }
+        .issue-info {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .picks-banner {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .picks-banner h2 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .picks-count {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .pick-card {
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            background: #f0fdf4;
+        }
+        .pick-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #10b981;
+        }
+        .ticker {
+            font-size: 32px;
+            font-weight: bold;
+            color: #065f46;
+        }
+        .company-name {
+            color: #6b7280;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .conviction {
+            background: #065f46;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .thesis {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #10b981;
+        }
+        .thesis h3 {
+            color: #065f46;
+            margin-top: 0;
+        }
+        .trade-setup {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        .trade-metric {
+            text-align: center;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f9fafb;
+        }
+        .trade-label {
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .trade-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #065f46;
+            margin-top: 5px;
+        }
+        .catalysts {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        .catalyst-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+        }
+        .catalyst-type {
+            font-weight: bold;
+            color: #d97706;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+        .technicals {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .technical-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .tech-label {
+            color: #6b7280;
+            font-size: 13px;
+        }
+        .tech-value {
+            font-weight: bold;
+            color: #1f2937;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .disclaimer {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Tech Turnaround Daily</h1>
+            <div class="issue-info">
+                Issue #22 • March 12, 2026 • Russell 2000 Tech Focus
+            </div>
+        </div>
+
+        <div class="picks-banner">
+            <h2>🎯 Investable Turnaround Picks</h2>
+            <div class="picks-count">3</div>
+            <p style="margin: 0; opacity: 0.9;">Stocks passed our strict investability filters today</p>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">1. TASK</div>
+                    <div class="company-name">TaskUs, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>TASK suggests a potential turnaround candidate due to significant insider buying activity, with 20 transactions and a Buy/Sell ratio of 99.0x [2], which may indicate confidence in the company's future prospects, despite currently underperforming vs XLK by 3.8% [3] and declining earnings [1]. The recent cluster of 12 Form 4 filings in 30 days [4] further supports this notion. Data shows a notable level of insider conviction, but the declining earnings and underperformance are concerns.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$10.68</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$18.16</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$9.26</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-13%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">5.3:1</div>
+                </div>
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+9.5%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">9.709091</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">235.3%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">27.965074906367043%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">7/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>❌ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">2. ZM</div>
+                    <div class="company-name">Zoom Communications, Inc.</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>ZM suggests a potential turnaround candidate due to its growing earnings, with a +2.0% QoQ average [1], and significant insider buying activity, with a 99.0x Buy/Sell ratio [2]. However, its underperformance vs XLK by 6.0% YTD [3] and recent insider cluster activity with 5 Form 4 filings in 30 days [4] indicate a need for cautious consideration. The company's growth prospects and insider confidence are somewhat offset by its relative underperformance.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$76.05</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$129.29</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$64.64</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+14.0%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">12.305826</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">83.2%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">27.985969756739%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">5/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>❌ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-header">
+                <div>
+                    <div class="ticker">3. OPRA</div>
+                    <div class="company-name">Opera Limited</div>
+                </div>
+                <div class="conviction">Conviction: 7/10</div>
+            </div>
+
+            <div class="thesis">
+                <h3>💡 Investment Thesis</h3>
+                <p>OPRA suggests a potential turnaround candidate as its earnings are declining, but it is outperforming its competitor XLC by 8.9% YTD [2], and has elevated short interest at 0.1% of float [3], which could indicate a potential reversal. Data shows a decline in earnings with no quarterly average growth [1]. The combination of these factors indicates a possible turnaround, but more data is needed for a stronger conviction.</p>
+            </div>
+
+            <div class="trade-setup">
+                <div class="trade-metric">
+                    <div class="trade-label">Entry Price</div>
+                    <div class="trade-value">$15.09</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Target (12-18mo)</div>
+                    <div class="trade-value">$25.65</div>
+                    <div style="color: #059669; font-size: 14px; margin-top: 5px;">+70%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Stop Loss</div>
+                    <div class="trade-value">$12.83</div>
+                    <div style="color: #dc2626; font-size: 14px; margin-top: 5px;">-15%</div>
+                </div>
+                <div class="trade-metric">
+                    <div class="trade-label">Risk/Reward</div>
+                    <div class="trade-value">4.7:1</div>
+                </div>
+            </div>
+
+            <div class="technicals">
+                <div class="technical-item">
+                    <div class="tech-label">Price vs 52W Low</div>
+                    <div class="tech-value">+28.0%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Volume Breakout</div>
+                    <div class="tech-value">✅ Yes</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Basing</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Above 200MA</div>
+                    <div class="tech-value">❌ No</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">P/E Ratio</div>
+                    <div class="tech-value">12.680672</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Earnings Growth</div>
+                    <div class="tech-value">94.19999999999999%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Analyst Upside</div>
+                    <div class="tech-value">69.9328031809145%</div>
+                </div>
+                <div class="technical-item">
+                    <div class="tech-label">Technical Score</div>
+                    <div class="tech-value">6/10</div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                <h3 style="margin-top: 0;">✅ Investability Checklist</h3>
+                <p><strong>Hard Checks (3/4):</strong></p>
+                <ul>
+<li>✅ Technical Basing</li>
+<li>✅ Volume Confirmation</li>
+<li>❌ Timing Catalyst</li>
+<li>✅ Valuation Reasonable</li>
+
+                </ul>
+                <p><strong>Soft Checks (2/3):</strong></p>
+                <ul>
+<li>❌ Above 200Ma</li>
+<li>✅ Earnings Growth</li>
+<li>✅ Analyst Upside</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <h3 style="color: #d97706; margin-top: 0;">⚠️ Important Disclaimer</h3>
+            <p><strong>This is not investment advice.</strong> These are turnaround opportunities with significant risk. Always:</p>
+            <ul>
+                <li>Do your own research and due diligence</li>
+                <li>Use proper position sizing (2-5% of portfolio)</li>
+                <li>Set stop losses and stick to them</li>
+                <li>Consult with a financial advisor</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <h3>📊 Today's Scan</h3>
+            <ul>
+                <li><strong>Stocks Screened:</strong> 541</li>
+                <li><strong>Discovery Candidates:</strong> 38</li>
+                <li><strong>Deep Analysis:</strong> 20</li>
+                <li><strong>Investable Today:</strong> 3 (0.55%)</li>
+            </ul>
+            <p style="margin-top: 20px; color: #9ca3af; text-align: center;">
+                Generated 2026-03-12 11:59 UTC<br>
+                Issue #22 • Tech Turnaround Daily
+            </p>
+        </div>
+    </div>
+</body>
+</html>
